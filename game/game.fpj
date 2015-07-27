@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+	<Libs Value="-I../include -L../lib -lEngine -lglfw3 -lglew32s -lSOIL -lglu32 -lglut32 -lBulletDynamics -lbulletCollision -llinearMath -lopengl32 -lassimp"/>
+	<Flags Value="-I..\include -I..\lib"/>
+	<Target Value="game.exe"/>
+	<CommandLine Value=""/>
+	<CompilerOptions Value="-O2"/>
+	<DeleteObjectsBefore Value="No"/>
+	<DeleteObjectsAfter Value="No"/>
+	<DeleteMakefileAfter Value="No"/>
+	<DeleteResourcesAfter Value="No"/>
+	<EnableTheme Value="No"/>
+	<RequiresAdmin Value="No"/>
+	<CompilerType Value="CPP"/>
+	<AppType Value="CONSOLE"/>
+	<Files>
+		<File Name="main2.cpp"/>
+		<Folder Name="..">
+			<Folder Name="common">
+				<File Name="Parser.h"/>
+				<File Name="Parser.cpp"/>
+				<File Name="pugixml.hpp"/>
+				<File Name="pugixml.cpp"/>
+			</Folder>
+		</Folder>
+		<Folder Name="Source">
+			<File Name="character.cpp"/>
+			<File Name="character.h"/>
+			<File Name="Camera.cpp"/>
+			<File Name="Camera.h"/>
+			<File Name="ParticleSystem.h"/>
+		</Folder>
+	</Files>
+</Project>

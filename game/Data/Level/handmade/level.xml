@@ -1,0 +1,88 @@
+<scene>
+
+	<node name="Sphere" type="MESH">
+		<matrix>
+		<position>0. 1. 10. </position>
+		</matrix>
+		<MeshGraphicComponent src="mesh\Sphere.obj">
+		<material>
+				<diffuse>#FF0000FF</diffuse>
+				<shininess>0</shininess>
+			</material>	
+		</MeshGraphicComponent>
+		<StaticMeshStaticPhysicsComponent src="mesh\Sphere.obj" mass="0.0" ></StaticMeshStaticPhysicsComponent>
+	</node>
+	<node name="Sphere" type="MESH">
+		<matrix>
+		<position>-2. 1. 10. </position>
+		</matrix>
+		<MeshGraphicComponent src="mesh\Sphere.obj">
+		<material>
+				<diffuse>#FF0000FF</diffuse>
+				<shininess>2</shininess>
+			</material>	
+		</MeshGraphicComponent>
+		<StaticMeshStaticPhysicsComponent src="mesh\Sphere.obj" mass="0.0" ></StaticMeshStaticPhysicsComponent>
+	</node>
+	<node name="Sphere" type="MESH">
+		<matrix>
+		<position>-4. 1. 10. </position>
+		</matrix>
+		<MeshGraphicComponent src="mesh\Sphere.obj">
+			<material>
+				<diffuse>#FF0000FF</diffuse>
+				<shininess>5</shininess>
+			</material>	
+		</MeshGraphicComponent>
+		<StaticMeshStaticPhysicsComponent src="mesh\Sphere.obj" mass="0.0" ></StaticMeshStaticPhysicsComponent>
+	</node>
+	<node name="Sphere" type="MESH">
+		<matrix>
+		<position>-6. 1. 10. </position>
+		</matrix>
+		<MeshGraphicComponent src="mesh\Sphere.obj">
+			<material>
+				<diffuse>#FF0000FF</diffuse>
+				<shininess>10</shininess>
+			</material>	
+		</MeshGraphicComponent>
+		<StaticMeshStaticPhysicsComponent src="mesh\Sphere.obj" mass="0.0" ></StaticMeshStaticPhysicsComponent>
+	</node>
+	<node name="Sphere" type="MESH">
+		<matrix>
+		<position>-8. 1. 10. </position>
+		</matrix>
+		<MeshGraphicComponent src="mesh\Sphere.obj">
+			<material>
+				<diffuse>#FF0000FF</diffuse>
+				<shininess>20</shininess>
+			</material>	
+		</MeshGraphicComponent>
+		<StaticMeshStaticPhysicsComponent src="mesh\Sphere.obj" mass="0.0" ></StaticMeshStaticPhysicsComponent>
+	</node>
+	<node name="Sphere" type="MESH">
+		<matrix>
+		<position>-10. 1. 10. </position>
+		</matrix>
+		<MeshGraphicComponent src="mesh\Sphere.obj">
+			<material>
+				<diffuse>#FF0000FF</diffuse>
+				<shininess>100</shininess>
+			</material>	
+		</MeshGraphicComponent>
+		<StaticMeshStaticPhysicsComponent src="mesh\Sphere.obj" mass="0.0" ></StaticMeshStaticPhysicsComponent>
+	</node>
+	<node name="Sphere" type="MESH">
+		<matrix>
+		<position>-12. 1. 10. </position>
+		</matrix>
+		<MeshGraphicComponent src="mesh\Sphere.obj">
+			<material>
+				<diffuse>#FF0000FF</diffuse>
+				<shininess>1000</shininess>
+			</material>	
+		</MeshGraphicComponent>
+		<StaticMeshStaticPhysicsComponent src="mesh\Sphere.obj" mass="0.0" ></StaticMeshStaticPhysicsComponent>
+	</node>
+
+</scene>
