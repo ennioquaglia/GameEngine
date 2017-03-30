@@ -1,0 +1,103 @@
+#pragma once
+
+#include "PhysicsComponent.h"
+
+
+
+
+
+
+struct Node{
+    int a;
+};
+
+
+int main(){
+    
+    Node n;
+    n.a;
+    
+    
+    Node *p=new Node();
+    
+    
+}
+
+
+
+
+
+
+
+namespace Engine{
+
+class MyCharacterDynamicPhysicsComponent : public PhysicsComponent
+{
+
+protected:
+    glm::vec3 walkDirection;
+    glm::quat orientation;
+
+    btRigidBody * physicComponent;
+    btDynamicsWorld * dynamicsWorld;
+
+
+    //parameter
+    float mass;
+    float moveSpeed;
+    float jumpHeight;
+    float jumpSpeed;
+    float capsuleHeight;
+    float capsuleRadius;
+    float springHeight;
+    float velocity;
+    int numRays;
+
+
+    //state
+    bool isJumping;
+    bool jump;
+    bool onGround;
+    bool isFalling;
+
+    glm::mat4 currentMatrix;
+public:
+
+    COMPONENT_TYPE_INFORMATION
+    MyCharacterDynamicPhysicsComponent(float radius = 1.0f);
+
+
+    virtual void updateMatrix();
+    virtual btRigidBody * getPhysicsObject();
+
+
+
+    virtual void handleEvent(Event &msg);
+    glm::vec3 position;
+    virtual void update(UpdateParameter &param);
+
+
+
+protected:
+    virtual btConvexShape * getCollisionShape();
+
+
+
+    virtual void OnAttached(Entity* e);
+
+    virtual void OnScene(Scene &scene);
+
+
+
+    //PhysicsSubSystem * sys;
+
+    virtual void move(glm::vec3 dir);
+    virtual glm::mat4 getTransform();
+
+
+
+};
+
+
+
+}
